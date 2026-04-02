@@ -1,29 +1,27 @@
 package dslinkedlist;
 
-// import org.w3c.dom.Node;
+public class LinkedList {
+    Node head;
 
-public class JunaLinkedList {
-    JunaNode head;
-
-    public JunaLinkedList(){
+    public LinkedList(){
         head = null;
     }
 
     public void insertAtBeginning(int data) {
-        JunaNode newNode = new JunaNode(data);
+        Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
     }
 
     public void insertAtEnd(int data) {
-        JunaNode newNode = new JunaNode(data);
+        Node newNode = new Node(data);
 
         if (head == null) {
             head = newNode;
             return;
         }
 
-        JunaNode current = head;
+        Node current = head;
         while (current.next != null) {
             current = current.next;
         }
@@ -32,7 +30,7 @@ public class JunaLinkedList {
     }
 
     public void display(){
-        JunaNode current = head;
+        Node current = head;
 
         while (current != null) {
             System.out.print(current.data + " -> ");
@@ -43,7 +41,7 @@ public class JunaLinkedList {
     }
 
     public boolean search(int key) {
-        JunaNode current = head;
+        Node current = head;
 
         while (current != null) {
             if (current.data == key) {
@@ -61,7 +59,7 @@ public class JunaLinkedList {
             return;
         }
 
-        JunaNode current = head;
+        Node current = head;
 
         while (current.next.data != key){
             System.out.println("Angka "+key+" Belum Ketemu");

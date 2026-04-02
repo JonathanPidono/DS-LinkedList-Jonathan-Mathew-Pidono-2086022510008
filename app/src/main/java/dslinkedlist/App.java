@@ -9,24 +9,30 @@ public class App {
 
 
     public static void main(String[] args) {
-        JunaLinkedList linked = new JunaLinkedList();
+        LinkedList linked = new LinkedList();
 
+        System.out.println("Insert at beginning: 20, 10");
         linked.insertAtBeginning(20);
         linked.insertAtBeginning(10);
         linked.display();
 
+        System.out.println("Insert at end: 30, 40");
         linked.insertAtEnd(30);
         linked.insertAtEnd(40);
         linked.display();
 
+        System.out.println("Search for 30:");
         System.out.println(linked.search(30));
 
+        System.out.println("Delete 20:");
         linked.delete(20);
         linked.display();
 
+        System.out.println("Delete 10:");
         linked.delete(10);
         linked.display();
 
+        System.out.println("Search for 100:");
         System.out.println(linked.search(100));
     }
 }

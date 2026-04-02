@@ -1,10 +1,10 @@
 package dslinkedlist;
 
-public class JunaNode {
+public class Node {
     int data;
-    JunaNode next;
+    Node next;
 
-    public JunaNode(int data) {
+    public Node(int data) {
         this.data = data;
         this.next = null;
     }
