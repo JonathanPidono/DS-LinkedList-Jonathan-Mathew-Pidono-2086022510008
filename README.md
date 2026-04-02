@@ -1,6 +1,9 @@
 Part A — Concept Check
+
 1. Why does a linked list need a head variable?
+
 2. Why does each node store a next reference?
+
 3. Why is insertion at the beginning easier in linked list than in array?
 
 Part B — Code Reading
