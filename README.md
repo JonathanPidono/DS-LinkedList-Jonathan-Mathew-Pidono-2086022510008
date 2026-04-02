@@ -4,18 +4,23 @@ Part A — Concept Check
 3. Why is insertion at the beginning easier in linked list than in array?
 
 Part B — Code Reading
+
 4. In insertAtBeginning(), why do we write:
   newNode.next = head;
   head = newNode;
   in that order?
+
 5. In display(), what would happen if we accidentally wrote:
   while (current.next != null)
   instead of:
   while (current != null)
 
 Part C — Comparison with Array
+
 6. Which structure is better for fast random access?
+
 7. Which structure is better for frequent insertion at the beginning?
+  
 8. Why does linked list use more memory than array?
 
 Jawaban:
